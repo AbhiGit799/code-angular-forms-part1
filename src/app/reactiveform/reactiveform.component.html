@@ -1,0 +1,58 @@
+<h2>Reactive Form</h2>
+
+<div>
+   <!-- Here, we already taking data from regForm, i.e. [formGroup]="regForm"  but still some developer pass regForm in method ()-->
+  <form [formGroup]="regForm" (ngSubmit)="register(regForm)">
+
+    <div>
+     Enter First Name &nbsp;
+      <input
+        type="text"
+        placeholder="Enter your first name"
+        formControlName="fname"
+      />
+    </div>
+
+    <div>
+     Enter Last Name &nbsp;
+      <input
+        type="text"
+        placeholder="Enter your Last name"
+        formControlName="lname"
+      />
+    </div>
+
+    <div>
+      Enter Email Address &nbsp;
+      <input
+        type="text"
+        placeholder="Enter your email address"
+        formControlName="email"
+      />
+    </div>
+
+    <div>
+      Enter Mobile Number &nbsp;
+      <input
+        type="text"
+        placeholder="Enter your Mobile Number"
+        formControlName="mobileno"
+      />
+    </div>
+
+    <div>
+        <button type="submit">Register</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
